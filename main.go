@@ -18,12 +18,6 @@ func main() {
 			aliCloudDisk.Run(pushPlusToken, refreshToken)
 		}
 	}
-	if bilibiliCookies != "null" {
-		bilibiliCookieList := strings.Split(bilibiliCookies, ",")
-		bilibili := platform.Bilibili{}
-		for _, bilibiliCookie := range bilibiliCookieList {
-			bilibili.Run(pushPlusToken, bilibiliCookie)
-		}
-	}
+
 
 }
